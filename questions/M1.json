@@ -1,0 +1,15 @@
+{
+  "title": "Find Departments with Average Salary Above 60000",
+  "difficulty": "Medium",
+  "description": "Write a SQL query to find department names where the average employee salary is greater than 60000.",
+  "schema": "CREATE TABLE employees (id INTEGER, name TEXT, salary INTEGER, department TEXT);\nINSERT INTO employees VALUES (1, 'Alice', 75000, 'HR');\nINSERT INTO employees VALUES (2, 'Bob', 55000, 'Engineering');\nINSERT INTO employees VALUES (3, 'Charlie', 80000, 'Engineering');\nINSERT INTO employees VALUES (4, 'David', 62000, 'Finance');\nINSERT INTO employees VALUES (5, 'Eve', 50000, 'Finance');",
+  "expectedResult": {
+    "columns": ["department"],
+    "values": [["Engineering"], ["HR"]]
+  },
+  "hint": "Use GROUP BY department and HAVING with AVG(salary).",
+  "contributor": {
+    "name": "Sukhpreet Singh",
+    "link": "https://linkedin.com/in/sukhpreet41"
+  }
+}
