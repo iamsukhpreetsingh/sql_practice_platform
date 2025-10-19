@@ -1,5 +1,5 @@
 {
-  "title": "Select All Employees",
+  "title": "Select All Employees from gh",
   "difficulty": "Easy",
   "description": "Write a query to select all columns from the employees table.",
   "schema": "CREATE TABLE employees (\n  id INTEGER PRIMARY KEY,\n  name TEXT,\n  department TEXT,\n  salary INTEGER\n);\n\nINSERT INTO employees VALUES (1, 'John Doe', 'Engineering', 75000);\nINSERT INTO employees VALUES (2, 'Jane Smith', 'Marketing', 65000);\nINSERT INTO employees VALUES (3, 'Bob Johnson', 'Engineering', 80000);\nINSERT INTO employees VALUES (4, 'Alice Brown', 'HR', 60000);",
