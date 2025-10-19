@@ -1,0 +1,14 @@
+{
+  "title": "Filter by Department by json test2",
+  "difficulty": "Easy",
+  "description": "Write a query to select names of all employees in the Engineering department.",
+  "schema": "CREATE TABLE employees (\n  id INTEGER PRIMARY KEY,\n  name TEXT,\n  department TEXT,\n  salary INTEGER\n);\n\nINSERT INTO employees VALUES (1, 'John Doe', 'Engineering', 75000);\nINSERT INTO employees VALUES (2, 'Jane Smith', 'Marketing', 65000);\nINSERT INTO employees VALUES (3, 'Bob Johnson', 'Engineering', 80000);\nINSERT INTO employees VALUES (4, 'Alice Brown', 'HR', 60000);",
+  "expectedResult": {
+    "columns": ["name"],
+    "values": [
+      ["John Doe"],
+      ["Bob Johnson"]
+    ]
+  },
+  "hint": "Use WHERE clause to filter by department"
+}
